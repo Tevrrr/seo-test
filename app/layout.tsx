@@ -1,5 +1,6 @@
 /** @format */
 
+import Head from 'next/head';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -19,6 +20,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
+			<head>
+				<meta
+					name='google-site-verification'
+					content='iMLI7dmXtK4OU3Lb_tHTocN8VUz7VzWBJk4TbIT7m-0'
+				/>
+			</head>
 			<body className={inter.className}>{children}</body>
 		</html>
 	);

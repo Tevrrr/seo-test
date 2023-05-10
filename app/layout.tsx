@@ -1,10 +1,8 @@
 /** @format */
 
-import Head from 'next/head';
-import './globals.css';
-import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+import './globals.css';
+
 
 export const metadata = {
 	title: 'ПЕРЕВОЗКИ ИЗ ЛДНР , РФ В СТРАНЫ ЕС И УКРАИНУ',
@@ -30,7 +28,7 @@ export default function RootLayout({
 					content='Пассажирские, перевозки, ЛНР, ДНР, РФ, Страны ЕС, Украина, Донецк, Луганск, Ростов, Воронеж, Москва, Псков, Эстония, Латвия, Литва, Польша, Германия, Чехия, Водители в пути, Комфортабельный транспорт, Помощь при пересечении границы, Скидка для детей до 12 лет, Перевозка животных, Мариуполь, Обратное направление, Перегон автомобиля, Денежные переводы, Обмен валют, Безналичный обмен, Наличный обмен, Банковские карты'
 				/>
 			</head>
-			<body className={inter.className}>{children}</body>
+			<body>{children}</body>
 		</html>
 	);
 }
